@@ -51,13 +51,13 @@ def box_office_data():
 
     # 1.4 TODO: Let's make sure "remaining_50_list" has exactly 50 movie titles.
     # Print out the number of title-strings in the list (count it with code!)
-    print(remaining_50_list.count())
+    print(len(remaining_50_list))
 
     # 1.5 TODO: Great! Let's combine the two lists into one list called `top_100`.
     # NOTE: Which list should be first when you combine them? The top 50 titles, or the remaining 50?
     # Print out the number of title-strings in the list (count it with code!)
     top_100 = top_50_list + remaining_50_list
-    print(top_100.count())
+    print(len(top_100))
     # 1.6 TODO: Let's print the first movie in our `top_100`list.
     # Use 'indexing' to do this.
     print(top_100[0])
@@ -93,4 +93,3 @@ def create_employee_email_address():
     # Print out the variable.
     email = f'{joined_names}@ripplemedia.com'
     print(email)
-box_office_data()
