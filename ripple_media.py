@@ -38,8 +38,8 @@ def box_office_data():
     # Let's use our conditional logic to check if "The Matrix" is still in `remaining_50_list`
     # Print `"The Matrix" in remaining_50_list`. It should print out `False`.
     # NOTE: Make sure to double check the list you are removing from!
-    remaining_50_list.remove('The Matrix')
     print("The Matrix" in remaining_50_list)
+    remaining_50_list.remove('The Matrix')
 
     # We're down to 49 movies in `remaining_50_list`.
     # 1.3 TODO: Let's add a movie to the end of the list called "Anywhere But Here".
@@ -60,13 +60,14 @@ def box_office_data():
     print(len(top_100))
     # 1.6 TODO: Let's print the first movie in our `top_100`list.
     # Use 'indexing' to do this.
+    print('YES!!')
     print(top_100[0])
 
     # 1.7 TODO: Print the top 10 movies in `top_100` as a list.
     # Use 'slicing' to accomplish this!
     print(top_100[:10])
 
-
+box_office_data()
 def create_employee_email_address():
     # Production is going well, now you need to hire a sales person!
     # It's typical when you hire a new employee in your company to setup an email address for them
