@@ -38,8 +38,8 @@ def box_office_data():
     # Let's use our conditional logic to check if "The Matrix" is still in `remaining_50_list`
     # Print `"The Matrix" in remaining_50_list`. It should print out `False`.
     # NOTE: Make sure to double check the list you are removing from!
-    # print("The Matrix" in remaining_50_list)
     remaining_50_list.remove('The Matrix')
+    print("The Matrix" in remaining_50_list)
 
     # We're down to 49 movies in `remaining_50_list`.
     # 1.3 TODO: Let's add a movie to the end of the list called "Anywhere But Here".
@@ -51,13 +51,13 @@ def box_office_data():
 
     # 1.4 TODO: Let's make sure "remaining_50_list" has exactly 50 movie titles.
     # Print out the number of title-strings in the list (count it with code!)
-    print(len(remaining_50_list))
+    print(remaining_50_list.count())
 
     # 1.5 TODO: Great! Let's combine the two lists into one list called `top_100`.
     # NOTE: Which list should be first when you combine them? The top 50 titles, or the remaining 50?
     # Print out the number of title-strings in the list (count it with code!)
     top_100 = top_50_list + remaining_50_list
-    print(len(top_100))
+    print(top_100.count())
     # 1.6 TODO: Let's print the first movie in our `top_100`list.
     # Use 'indexing' to do this.
     print(top_100[0])
